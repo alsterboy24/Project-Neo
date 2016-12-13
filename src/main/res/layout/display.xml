@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "@drawable/blue_cyberhoneycomb">
+
+    <TextView
+        android:text="Welcome To PicXelGlobes!"
+        android:layout_width="177dp"
+        android:layout_height="32dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:text="@string/emtyString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/TVusername" />
+
+    <Button
+        android:text="Camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/But1"
+        android:onClick="onButtonClick"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/TVusername"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+
+    <Button
+        android:text="Upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:id="@+id/button"
+        android:layout_alignTop="@+id/But1"
+        android:layout_toLeftOf="@+id/But1"
+        android:layout_toStartOf="@+id/But1"
+        android:layout_marginRight="7dp"
+        android:layout_marginEnd="7dp" />
+
+    <Button
+        android:text="MyGlobe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignRight="@+id/But1"
+        android:layout_alignEnd="@+id/But1"
+        android:layout_marginTop="37dp"
+        android:id="@+id/button2" />
+
+    <Button
+        android:text="Notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2" />
+
+    <Button
+        android:text="Rate Us!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginTop="25dp"
+        android:id="@+id/button4" />
+
+    <Button
+        android:text="Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3" />
+
+</RelativeLayout>
